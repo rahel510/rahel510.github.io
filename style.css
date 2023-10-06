@@ -27,9 +27,10 @@ body {
   height: 100vh;
 }
 .flexbox {
+  display: flex;
+  background-color: white;
   text-align: center;
-  border: 2rem #d19035 solid;
-  padding: 4rem;
+  max-width: 80rem;
 }
 h1 {
   font-weight: 700;

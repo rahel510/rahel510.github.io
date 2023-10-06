@@ -3,12 +3,24 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
+@font-face {
+  font-family: OpenSans;
+  font-weight: 700;
+  src: url(assets/font/Open_Sans/static/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  font-weight: 600;
+  src: url(assets/font/Open_Sans/static/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  font-weight: 400;
+  src: url(assets/font/Open_Sans/static/OpenSans-Regular.ttf);
+}
 body {
-  font-family: Poppins;
-  background-color: #aec6db;
+  font-family: OpenSans, sans-serif;
+  background-color: #d19035;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +32,13 @@ body {
   padding: 4rem;
 }
 h1 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+p {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.icon {
+  width: 4rem;
 }

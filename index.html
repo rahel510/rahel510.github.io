@@ -5,24 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rahel Knüsel</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <script src="dark-light-mode.js" defer></script> -->
   </head>
   <body>
-    <div class="flexbox">
-      <img src="assets/images/Foto-Platzhalter.jpeg" alt="Platzhalter" />
-      <div class="text">
-        <h1>Hello, I'm Rahel.</h1>
-        <p>I learn web development.</p>
-        <a href="mailto:rahel.knuesel@hotmail.ch">
+    <header>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">projekte</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"> about me</a>
+          </li>
+        </ul>
+        <button id="dlSwitch" class="theme-switch">
+          Light Mode / Dark Mode
+        </button>
+       
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="container container--center">
+        <h1 class="title title--red">Hello, I'm Rahel.</h1>
+        <p class="text text--white">I learn web development.</p>
+        <div class="contact">
+          <!-- BEM -->
+          <!-- Block__Element--Modifier -->
           <img
             src="assets/images/envelope-solid.svg"
             alt="Email Icon"
-            class="icon"
+            class="contact__icon contact__icon--red"
           />
-        </a>
-        <a href="https://github.com/rahel510" target="_blank">
-          <img src="assets/images/github.svg" alt="Github Icon" class="icon" />
-        </a>
+          <img
+            src="assets/images/github.svg"
+            alt="Github Icon"
+            class="contact__icon--blue"
+          />
+        </div>
       </div>
-    </div>
+    <script src="dark-light-mode.js" ></script>
   </body>
 </html>

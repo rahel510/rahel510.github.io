@@ -1,3 +1,19 @@
+:root {
+  --text: #130e01;
+  --background: #fffaeb;
+  --primary: #ff8400;
+  --secondary: #fff5d6;
+  --accent: #cf4307;
+}
+
+body.dark {
+  --text: #fef9ec;
+  --background: #140f00;
+  --primary: #ff8400;
+  --secondary: #291f00;
+  --accent: #f86c30;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +34,102 @@
   font-weight: 400;
   src: url(assets/font/Open_Sans/static/OpenSans-Regular.ttf);
 }
+
 body {
+  background-color: var(--background);
+}
+
+/* navigation */
+.navigation {
+  display: flex;
+  justify-content: end;
+  padding: 4rem;
+}
+.navigation__list {
+  display: flex;
+  list-style-type: none;
+  gap: 4rem;
+}
+.navigation__item a {
+  text-decoration: none;
+  color: black;
+}
+
+.theme-switch__icon {
+  width: 5rem;
+}
+
+/* main */
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+}
+.container {
+  max-width: 20rem;
+  padding: 1rem;
+  margin: auto;
+  background-color: var(--primary);
+  overflow: hidden;
+  position: relative;
+}
+
+.container--center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 5;
+}
+.container--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title--red {
+  color: var(--secondary);
+}
+.title {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.text--secondary {
+  color: var(--secondary);
+}
+.text {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+.contact__icon {
+  width: 3rem;
+  border: 3px solid black;
+}
+.contact__icon--red {
+  background-color: red;
+}
+.contact__icon--blue {
+  background-color: blue;
+}
+
+/* .circle {
+  position: absolute;
+  background-color: #eee;
+  border-radius: 9999px;
+  width: 5rem;
+  height: 5rem;
+}
+
+.circle--left {
+  transform: translateX(-50%);
+} */
+
+/* body {
   font-family: OpenSans, sans-serif;
   background-color: #d19035;
   display: flex;
@@ -28,18 +139,33 @@ body {
 }
 .flexbox {
   display: flex;
-  background-color: white;
+  background-color: secondary;
   text-align: center;
   max-width: 80rem;
+  padding-top: 9rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 5rem;
 }
-h1 {
+.title {
   font-weight: 700;
   font-size: 4rem;
+  margin-bottom: 3rem;
 }
 p {
   font-weight: 600;
   font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.containerIcons {
+  display: flex;
+  justify-content: space-around;
 }
 .icon {
-  width: 4rem;
+  width: 3rem;
 }
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+} */

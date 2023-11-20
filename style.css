@@ -108,30 +108,13 @@ body {
 }
 .contact__icon {
   width: 3rem;
-  border: 3px solid black;
-}
-.contact__icon--red {
-  background-color: red;
-}
-.contact__icon--blue {
-  background-color: blue;
 }
 
 /* grid Versuch */
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto auto auto;
-}
-.grid-item {
-  background-color: blueviolet;
-  grid-column: 2 / 1;
-  grid-row: 3 / 1;
-}
-.grid-item2 {
-  background-color: brown;
-  grid-column: 2 / 1;
-  grid-row: 5 / 1;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
 
 /* button  */

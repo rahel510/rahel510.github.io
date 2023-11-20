@@ -117,6 +117,19 @@ body {
   background-color: blue;
 }
 
+/* grid Versuch */
+.grid-container {
+  display: grid;
+}
+.grid-item {
+  background-color: blueviolet;
+  grid-column: 2/3;
+}
+.grid-item2 {
+  background-color: brown;
+  grid-column: 2/5;
+}
+
 /* button  */
 #dlswitch {
   width: 100px;

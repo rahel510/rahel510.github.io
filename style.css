@@ -18,21 +18,23 @@ body.dark {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Amiko", sans-serif;
 }
+
 @font-face {
-  font-family: OpenSans;
+  font-family: "Amiko", sans-serif;
   font-weight: 700;
-  src: url(assets/font/Open_Sans/static/OpenSans-Bold.ttf);
+  src: url(assets/font/Amiko/Amiko-Bold.ttf);
 }
 @font-face {
-  font-family: OpenSans;
-  font-weight: 600;
-  src: url(assets/font/Open_Sans/static/OpenSans-SemiBold.ttf);
-}
-@font-face {
-  font-family: OpenSans;
+  font-family: "Amiko", sans-serif;
   font-weight: 400;
-  src: url(assets/font/Open_Sans/static/OpenSans-Regular.ttf);
+  src: url(assets/font/Amiko/Amiko-Regular.ttf);
+}
+@font-face {
+  font-family: "Amiko", sans-serif;
+  font-weight: 600;
+  src: url(assets/font/Amiko/Amiko-SemiBold.ttf);
 }
 
 body {
@@ -59,7 +61,7 @@ body {
   width: 5rem;
 } */
 
-#dlswitch {
+.buttonStyle {
   width: 4rem;
   height: 1.5rem;
   margin: 1rem;

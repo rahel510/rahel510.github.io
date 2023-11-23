@@ -55,8 +55,14 @@ body {
   color: black;
 }
 
-.theme-switch__icon {
+/* .theme-switch__icon {
   width: 5rem;
+} */
+
+#dlswitch {
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: white;
 }
 
 /* main */

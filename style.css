@@ -60,9 +60,11 @@ body {
 } */
 
 #dlswitch {
+  width: 4rem;
+  height: 1.5rem;
   margin: 1rem;
   border-radius: 1rem;
-  background-color: white;
+  outline: 0;
 }
 
 /* main */

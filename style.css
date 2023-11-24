@@ -39,13 +39,14 @@ body.dark {
 
 body {
   background-color: var(--background);
+  height: 100vh;
 }
 
 /* navigation */
 .navigation {
   display: flex;
   justify-content: end;
-  padding: 4rem;
+  margin: 4rem;
 }
 
 /* body > header > nav > button {
@@ -60,7 +61,6 @@ body {
 
 /* main */
 .wrapper {
-  min-height: 100vh;
   overflow: hidden;
 }
 .container {
@@ -111,13 +111,6 @@ body {
   gap: 1.5rem;
 }
 
-/* button  */
-/* #dlswitch {
-  width: 100px;
-  height: 50px;
-  border-radius: 20px;
-} */
-
 /* ipad */
 @media (min-width: 640px) and (max-width: 768px) {
   .container {
@@ -136,8 +129,6 @@ body {
     margin: auto;
     background-color: green;
     max-width: 640px;
-    min-height: 700px;
-    max-height: 800px;
   }
   .container--center {
     width: 100%;
